@@ -143,8 +143,8 @@ def setup_system_prompt():
     st.sidebar.markdown("## 🎭 AI Personality")
     
     prompt_options = {
-        "🔥 Snarky": "You are a very snarky assistant.",
-        "😊 Polite": "You are a very polite assistant.",
+        "🔥 Snarky": "You are a very snarky helpfull assistant.",
+        "😊 Polite": "You are a very polite helpfull assistant.",
         "🎨 Custom": "custom"
     }
     
@@ -160,7 +160,7 @@ def setup_system_prompt():
             placeholder="e.g., helpful, creative, analytical"
         )
         if custom_behavior:
-            return f"You are a very {custom_behavior.strip()} assistant."
+            return f"You are a very {custom_behavior.strip()} helpfull assistant."
         else:
             st.sidebar.warning("Please enter a custom behavior")
             return None
